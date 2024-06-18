@@ -2591,7 +2591,7 @@ class Compiler implements InjectionAwareInterface
     /**
      * Traverses a statement list compiling each of its nodes
      */
-    final protected function statementList(array! statements, bool extendsMode = false) -> string
+    final protected function statementList(array! statements, bool extendsMode = false) -> string|null
     {
         var extended, blockMode, compilation, extensions, statement,
             tempCompilation, type, blockName, blockStatements, blocks, path,
