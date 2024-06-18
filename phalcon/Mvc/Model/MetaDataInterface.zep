@@ -128,7 +128,7 @@ interface MetaDataInterface
     /**
      * Reads meta-data for certain model using a MODEL_* constant
      */
-    public function readMetaDataIndex(<ModelInterface> model, int index) -> array | null;
+    public function readMetaDataIndex(<ModelInterface> model, int index) -> array | null | string;
 
     /**
      * Resets internal meta-data in order to regenerate it
