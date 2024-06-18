@@ -596,7 +596,7 @@ abstract class MetaData implements InjectionAwareInterface, MetaDataInterface
      * );
      *```
      */
-    final public function readMetaDataIndex(<ModelInterface> model, int index) -> array | null
+    final public function readMetaDataIndex(<ModelInterface> model, int index) -> array | null | string
     {
         var key;
         let key = this->getMetaDataUniqueKey(model);
